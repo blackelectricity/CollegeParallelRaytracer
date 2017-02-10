@@ -1,0 +1,29 @@
+Hans Gronewold's Ray Tracer Use Manual:
+
+-Configuring Main.cpp:
+    ANTIALIAS is the square root of the rays shot into the scene per pixel
+    RECURSION is the maximum number of reflections/refractions per ray
+    MAX_DISTANCE is the maximum distance for a ray to travel
+                 it is set greater then the scene's mathematical limits
+    
+-Scene.cpp
+    the scenes are defined here.  
+    there are two test scenes (as stated from proposal).
+    you must switch the scenes by switching which one is commented out
+    the image is rendered according to screen size on computer rendering is done
+
+-User interface
+    makefile included, runs in linux lab, run with ./raytracer
+    dynamic percentage complete will print to standard output
+    when finished the window will open with the rendered image
+    this window should be the size of your current screen
+    pressing the 'q'or'Q' keys or the window's 'x' button will exit
+    resizing the window is allowed
+
+-Mathematical Description
+    for concurrent algorithm and some math see code documentation
+    rays are shot from camera through a theoretical screen
+    the color is accumulated from different types of lighting
+
+
+p.s. unused old and complete vector and matrix classes are included
